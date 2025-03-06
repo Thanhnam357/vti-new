@@ -1,0 +1,97 @@
+.loginScreen {
+    display: flex;
+    height: 100vh; 
+  }
+  
+  .loginSection {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .userSection {
+    background-color: #f0f4f8; 
+    color: #333;
+  }
+  
+  .authorSection {
+    background-color: #083163; 
+    color: #fff;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  form {
+    width: 80%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .userSection button {
+    background-color: #115bb4;
+    color: white;
+  
+    &:hover {
+      background-color: #0d417d;
+    }
+  }
+  
+  .authorSection button {
+    background-color: #fff;
+    color: #115bb4;
+  
+    &:hover {
+      background-color: #f2f2f2;
+    }
+  }
+
+  .googleLogin {
+    display: flex;
+    align-items: center; 
+    margin-top: 20px;
+    cursor: pointer;
+  
+    span {
+      font-size: 16px;
+      margin-right: 10px; 
+      color: inherit;
+    }
+  
+    img {
+      width: 20px; 
+      height: 20px;
+    }
+  
+    &:hover {
+      opacity: 0.8; 
+    }
+  }
