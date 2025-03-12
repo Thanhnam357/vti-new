@@ -4,6 +4,7 @@ import Header from "./common/Header";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import WritingPage from "./components/WritingPage";
+import AuthorPage from "./components/AuthorPage";
 
 
 function App() {
@@ -13,8 +14,10 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} /> 
         <Route path="/signup" element={<Signup />} /> 
+        <Route path="/author" element={<AuthorPage />} />
+        <Route path="/writing" element={<WritingPage />} />
       </Routes>
-      <WritingPage />
+      
     </Router>
   );
 }

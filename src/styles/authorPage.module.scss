@@ -1,0 +1,121 @@
+.authorPage {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+
+  .authorInfo {
+    text-align: center;
+    margin-top: 20px;
+
+    .avatarLarge {
+      width: 80px;
+      height: 80px;
+      background: lightgray;
+      border-radius: 50%;
+      margin: auto;
+    }
+
+    h2 {
+      margin: 10px 0;
+    }
+
+    .stats {
+      span {
+        margin: 0 10px;
+      }
+    }
+
+    .filters {
+      margin-top: 10px;
+
+      button {
+        margin: 5px;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background: #ddd;
+        }
+      }
+    }
+  }
+
+  .postList {
+    margin-top: 20px;
+
+    .postCard {
+      display: flex;
+      align-items: center;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      width: 100%;
+      justify-content: flex-start; 
+
+      .postLeft {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .postActions {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+        
+        svg {
+          cursor: pointer;
+          font-size: 18px;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #0052cc;
+          }
+        }
+      }
+
+      .postImage {
+        width: 100px;
+        height: 80px;
+        background: black;
+        border-radius: 5px;
+      }
+
+      .postContent {
+        margin-left: 15px;
+        flex-grow: 1;
+
+        .postTitle {
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        .viewCount {
+          font-size: 14px;
+          color: gray;
+        }
+      }
+    }
+  }
+
+  .newPostBtn {
+    background: #ff5c5c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+
+    &:hover {
+      background: #e04b4b;
+    }
+  }
+}
