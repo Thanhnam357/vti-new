@@ -5,6 +5,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import WritingPage from "./components/WritingPage";
 import AuthorPage from "./components/AuthorPage";
+import PersonalEdit from "./components/PersonalEdit";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/signup" element={<Signup />} /> 
         <Route path="/author" element={<AuthorPage />} />
         <Route path="/writing" element={<WritingPage />} />
+        <Route path="/personaledit" element={<PersonalEdit />} />
       </Routes>
       
     </Router>
